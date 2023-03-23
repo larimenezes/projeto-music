@@ -122,6 +122,74 @@ h2 {
     width: 40px;
 }
 
+.courses0section {
+    padding-bottom;;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0px var(--color-black);
+    max-width: 17rem;
+    padding: 2rem 0px 0px 2rem;
+}
+
+.card:nth-child(2n) {
+    align-self: end;
+    background-color: var(--color-secondary);
+}
+
+.card strong {
+    display: block;
+    font-size: 1.25rem;
+    margin: 1rem 0px;
+}
+
+.card a {
+    display: block;
+    margin-top: 3rem 0 0 auto;
+    width: fit-content;
+}
+
+
+
+
+
+/*rodapé*/
+footer {
+    border-bottom: 0px;
+    padding: 1rem 1.25rem 4rem;
+}
+
+footer nav a {
+    display: block;
+    padding-left: 0px;
+}
+
+.newsletter-form label {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.newsletter-form input {
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0px var(--color-black);
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+
+/* utilitários*/
 .mt-1 {
     margin-top: 1rem;
 }
@@ -146,3 +214,26 @@ h2 {
 .text-primary {
     color: var(--color-primary);
 }
+
+
+/*responsividade*/
+
+@media screen and (min-width: 40rem) { /*aprox 640pixels*/
+    header nav {
+        display: block;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;       
+    }
+
+    .card:nth-child(2n) {
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen
